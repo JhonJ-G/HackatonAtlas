@@ -26,8 +26,8 @@ export async function askEnergyLLM({ messages, systemPrompt }) {
     }
 
     // Endpoint de Gemini con API key como query parameter
-    // Usando gemini-1.5-flash que es más estable
-    const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+    // Usando gemini-pro que es el modelo estable disponible
+    const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
     
     // Debug: Log de entrada
     console.log('🔍 Datos de entrada:', { 
