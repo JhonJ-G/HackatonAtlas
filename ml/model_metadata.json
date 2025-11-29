@@ -1,0 +1,46 @@
+{
+  "model_type": "RandomForestClassifier",
+  "training_date": "2025-11-29T02:36:14.108280",
+  "dataset_size": 1122,
+  "feature_columns": [
+    "latitud",
+    "longitud",
+    "altitud_msnm",
+    "radiacion_kWhm2_dia",
+    "viento_ms",
+    "temperatura_C",
+    "humedad_relativa_pct",
+    "nubosidad_pct",
+    "tipo_red_SIN",
+    "tipo_red_ZNI"
+  ],
+  "classes": [
+    "solar",
+    "eolica",
+    "hibrida"
+  ],
+  "best_params": {
+    "class_weight": "balanced",
+    "max_depth": 8,
+    "min_samples_leaf": 2,
+    "min_samples_split": 5,
+    "n_estimators": 300
+  },
+  "performance": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0
+  },
+  "feature_importance": {
+    "latitud": 0.2886380992107584,
+    "longitud": 0.02505404160842537,
+    "altitud_msnm": 0.04165768649019574,
+    "radiacion_kWhm2_dia": 0.08695382345366133,
+    "viento_ms": 0.3187577314252494,
+    "temperatura_C": 0.05906940302918845,
+    "humedad_relativa_pct": 0.0820073342072851,
+    "nubosidad_pct": 0.09589919316093624,
+    "tipo_red_SIN": 0.00140472369570823,
+    "tipo_red_ZNI": 0.0005579637185916539
+  }
+}

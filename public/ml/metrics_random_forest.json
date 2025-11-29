@@ -1,0 +1,74 @@
+{
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "confusion_matrix": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      0,
+      220
+    ]
+  ],
+  "classification_report": {
+    "eolica": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "hibrida": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "solar": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 220.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 229.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 229.0
+    }
+  },
+  "best_params": {
+    "class_weight": "balanced",
+    "max_depth": 8,
+    "min_samples_leaf": 2,
+    "min_samples_split": 5,
+    "n_estimators": 300
+  },
+  "feature_importance": {
+    "latitud": 0.2886380992107584,
+    "longitud": 0.02505404160842537,
+    "altitud_msnm": 0.04165768649019574,
+    "radiacion_kWhm2_dia": 0.08695382345366133,
+    "viento_ms": 0.3187577314252494,
+    "temperatura_C": 0.05906940302918845,
+    "humedad_relativa_pct": 0.0820073342072851,
+    "nubosidad_pct": 0.09589919316093624,
+    "tipo_red_SIN": 0.00140472369570823,
+    "tipo_red_ZNI": 0.0005579637185916539
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Energético - Redirecting...</title>
+  <script>
+    // Redirección para GitHub Pages SPA
+    const path = window.location.pathname.split('/').slice(2).join('/');
+    const query = window.location.search;
+    const hash = window.location.hash;
+    
+    if (path || query || hash) {
+      window.location.replace('/HackatonAtlas/#/' + path + query + hash);
+    } else {
+      window.location.replace('/HackatonAtlas/');
+    }
+  </script>
+</head>
+<body>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
+    <div style="text-align: center;">
+      <h2>Redirigiendo...</h2>
+      <p>Si no eres redirigido automáticamente, <a href="/HackatonAtlas/">haz clic aquí</a>.</p>
+    </div>
+  </div>
+</body>
+</html>
